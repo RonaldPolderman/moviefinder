@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 5px solid red;
+}
+
+h3,
+p,
+h4 {
+    background-color: red;
+    padding-bottom: 10px;
+}
+
+h4 {
+    clear: both;
+    padding-top: 5px;
+}
+
+p {
+    margin-bottom: 9px;
+}
+
+.all-movies input {
+    cursor: pointer;
+}
+
+.navbar1,
+.latest-movies,
+.X-men-movies,
+.Batman-movies,
+.Avengers-movies,
+.Princess-movies {
+    background-color: rgb(26, 24, 24);
+    margin-bottom: 15px;
+
+}
+
+.latest-movies:hover {
+    background-color: rgb(54, 54, 83);
+    transition: 500ms ease-in;
+
+}
+
+.X-men-movies:hover {
+    background-color: rgb(54, 54, 83);
+    transition: 500ms ease-in;
+}
+
+.Batman-movies:hover {
+    background-color: rgb(54, 54, 83);
+    transition: 500ms ease-in;
+}
+
+.Avengers-movies:hover {
+    background-color: rgb(54, 54, 83);
+    transition: 500ms ease-in;
+}
+
+.Princess-movies:hover {
+    background-color: rgb(54, 54, 83);
+    transition: 500ms ease-in;
+}
+
+#movie-container {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.poster {
+    border: 1px solid red;
+    margin: 4px;
+}
+
+.poster:hover {
+    border: 3px solid green;
+}
+
+@media only screen and (min-width:768px) {
+    h3 {
+        transition: 1000ms ease-in-out;
+        font-size: 2em;
+    }
+
+    p {
+        transition: 1500ms ease-in-out;
+        font-size: 1.4em;
+    }
+
+    .navbar1 ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding-top: 5px;
+        grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+}

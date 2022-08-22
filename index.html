@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Film Finder</title>
+</head>
+
+<body>
+    <header>
+        <h3> Grab a Coke, a snack and have a great movie night!</h3>
+        <p>Scroll though the movie list or click a button for a specific type of movie</p>
+    </header>
+    <nav class="navbar1">
+        <ul>
+            <li class="latest-movies">
+                <input type="radio" id="latest-movies" name="movies" value="latest">
+                <label for="latest">Latest supermovies! 2014 or newer</label>
+            </li>
+            <li class="X-men-movies">
+                <input type="radio" id="xmen-movies" name="movies" value="x-men">
+                <label for="xmen">X-Men movies</label>
+            </li>
+            <li class="Batman-movies">
+                <input type="radio" id="batman-movies" name="movies" value="batman">
+                <label for="batman">Batman movies</label>
+            </li>
+            <li class="Avengers-movies">
+                <input type="radio" id="avengers-movies" name="movies" value="avengers">
+                <label for="avengers">Avengers movies</label>
+            </li>
+            <li class="Princess-movies">
+                <input type="radio" id="princess-movies" name="movies" value="princess">
+                <label for="princess">Princess movies</label>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <ul id="movie-container">
+        </ul>
+    </main>
+    <footer>
+        <h4> &#129380; ENJOY THE MOVIE &#127871; </h4>
+    </footer>
+    <script rel=" stylesheet" src="scriptarray.js"></script>
+    <script rel="stylesheet" src="scriptpicker.js"></script>
+</body>
+
+</html>
